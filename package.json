@@ -1,0 +1,22 @@
+{
+  "name": "streamlink-server",
+  "version": "1.0.0",
+  "description": "Docker HTTP wrapper for streamlink --stream-url",
+  "main": "main.js",
+  "scripts": {
+    "main": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heleon19/streamlink-server.git"
+  },
+  "author": "Reto Jenni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heleon19/streamlink-server/issues"
+  },
+  "homepage": "https://github.com/heleon19/streamlink-server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
