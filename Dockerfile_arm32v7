@@ -2,7 +2,7 @@ FROM arm32v7/node:11.9
 COPY qemu-arm-static /usr/bin
 
 RUN apt-get update \
-    && apt-get install -y git python-setuptools \
+    && apt-get install -y git python-dev python-setuptools \
     && git clone https://github.com/streamlink/streamlink \
     && cd streamlink/ \
     && python setup.py install
