@@ -1,5 +1,5 @@
 #!/bin/bash
 curl -Lo manifest-tool https://github.com/estesp/manifest-tool/releases/download/v1.0.0/manifest-tool-linux-amd64
 chmod +x manifest-tool
-ls manifest-tool
-./manifest-tool push from-spec manifest-tool/multi-arch-manifest.yaml
+find
+./manifest-tool push from-spec ./manifest-tool/multi-arch-manifest.yaml
