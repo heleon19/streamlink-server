@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t $IMAGE_NAME -f $DOCKERFILE_PATH . --build-arg SOURCE_BRANCH=$SOURCE_BRANCH
-docker build -t $IMAGE_NAME -f $DOCKERFILE_PATH_arm32v7 . --build-arg SOURCE_BRANCH=$SOURCE_BRANCH
+docker build -t $DOCKER_REPO:$DOCKER_TAG-amd64 -f $DOCKERFILE_PATH . --build-arg SOURCE_BRANCH=$SOURCE_BRANCH
+docker build -t $DOCKER_REPO:$DOCKER_TAG-arm32v7 -f $DOCKERFILE_PATH_arm32v7 . --build-arg SOURCE_BRANCH=$SOURCE_BRANCH
