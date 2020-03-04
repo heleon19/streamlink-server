@@ -1,4 +1,4 @@
 #!/bin/bash
 
 docker build -t $DOCKER_REPO:$DOCKER_TAG'-amd64' -f $DOCKERFILE_PATH .
-docker build -t $DOCKER_REPO:$DOCKER_TAG'-arm32v7' -f $DOCKERFILE_PATH'_arm32v7' .
+docker build -t $DOCKER_REPO:$DOCKER_TAG'-armv7' -f $DOCKERFILE_PATH'_arm32v7' .

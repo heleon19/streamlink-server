@@ -1,5 +1,4 @@
 #!/bin/bash
 curl -Lo manifest-tool https://github.com/estesp/manifest-tool/releases/download/v1.0.0/manifest-tool-linux-amd64
 chmod +x manifest-tool
-VTAG=$(echo $DOCKER_TAG | grep -oP '(^.*)(?=\-)')
-./manifest-tool push from-args --platforms linux/amd64,linux/arm32v7 --template $DOCKER_REPO:$VTAG-ARCH --target $DOCKER_REPO:$VTAG
+./manifest-tool push from-args --platforms linux/amd64,linux/arm/v7 --template $DOCKER_REPO:$DOCKER_TAG'-ARCHVARIANT' --target $DOCKER_REPO:$DOCKER_TAG
